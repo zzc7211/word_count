@@ -16,3 +16,5 @@ def counter(request):
     sourted_dict=sorted(word_disk.items(),key=lambda w:w[1],reverse=True)
 
     return render(request,'count.html',{'couont':total_count,'text':texts,'worddisk':sourted_dict})
+def about(request):
+    return render(request,'about.html')
